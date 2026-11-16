@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario para Diseñadores</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <main class="app-container">
+
+    <!-- PANTALLA 1: MENÚ DE INICIO -->
+    <section id="pantalla-menu" class="pantalla activa">
+      <div class="badge">TEST SIN FILTROS</div>
+      <h1 class="titulo">Formulario para Diseñadores</h1>
+      <p class="subtitulo">Demuestra si de verdad sabes diseñar o si solo vives de plantillas.</p>
+
+      <nav class="menu-botones">
+        <button id="btn-iniciar" class="btn btn-primario">Iniciar</button>
+        <button id="btn-dev" class="btn btn-secundario">Mensaje al Desarrollador</button>
+        <button id="btn-salir" class="btn btn-fantasma">Salir</button>
+      </nav>
+    </section>
+
+    <!-- PANTALLA 1.5: SELECCIÓN DE NIVEL -->
+    <section id="pantalla-nivel" class="pantalla">
+      <div class="badge">ANTES DE EMPEZAR</div>
+      <h2>¿Cuál es tu nivel?</h2>
+      <p class="subtitulo">Elige con honestidad, el cuestionario te va a juzgar igual.</p>
+
+<div class="menu-botones">
+        <button class="btn btn-secundario btn-nivel" data-dificultad="1" data-nivel="Aficionado">Aficionado</button>
+        <button class="btn btn-secundario btn-nivel" data-dificultad="2" data-nivel="Estudiante">Estudiante</button>
+        <button class="btn btn-secundario btn-nivel" data-dificultad="3" data-nivel="Diseñador Jr">Diseñador Jr</button>
+        <button class="btn btn-secundario btn-nivel" data-dificultad="4" data-nivel="Diseñador Sr">Diseñador Sr</button>
+      </div>
+      <button id="btn-volver-desde-nivel" class="btn-texto">← Volver</button>
+    </section>
+
+    <!-- PANTALLA 2: JUEGO (PREGUNTAS) -->
+    <section id="pantalla-juego" class="pantalla">
+      <header class="juego-header">
+        <span id="etiqueta-nivel" class="nivel-tag">Nivel: -</span>
+        <span id="contador-pregunta">1 / 3</span>
+        <span id="puntaje-actual">Aciertos: 0</span>
+      </header>
+
+      <div class="pregunta-card">
+        <h2 id="texto-pregunta">Aquí cargará la pregunta...</h2>
+      </div>
+
+      <div id="contenedor-opciones" class="opciones-grid">
+        <!-- Opciones generadas desde JS -->
+      </div>
+
+      <div id="estado-audio" class="audio-indicador oculto">
+        🔊 Escuchando veredicto...
+      </div>
+
+      <div class="juego-footer">
+        <button id="btn-volver-menu" class="btn-texto">← Abandonar prueba</button>
+      </div>
+    </section>
+
+    <!-- PANTALLA 3: RESULTADO FINAL -->
+    <section id="pantalla-final" class="pantalla">
+      <div id="badge-final" class="badge">RESULTADO</div>
+      <h2>Veredicto Final</h2>
+      <p id="puntaje-final" class="numero-grande">0 / 3</p>
+      <p id="mensaje-rango" class="subtitulo"></p>
+      <button id="btn-reiniciar" class="btn btn-primario">Intentar de Nuevo</button>
+      <button id="btn-inicio-final" class="btn btn-secundario">Menú Principal</button>
+    </section>
+
+    <!-- MODAL: MENSAJE AL DESARROLLADOR -->
+    <div id="modal-dev" class="modal-overlay">
+      <div class="modal-caja">
+        <h3>Mensaje al Desarrollador</h3>
+        <p>¿Te ofendió un audio o quieres sugerir una pregunta? Escríbelo aquí:</p>
+        <form id="form-dev">
+          <textarea id="input-mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <div class="modal-acciones">
+            <button type="button" id="btn-cerrar-modal" class="btn btn-fantasma">Cancelar</button>
+            <button type="submit" class="btn btn-primario">Enviar</button>
+          </div>
+        </form>
+        <p id="confirmacion-envio" class="texto-exito oculto">¡Mensaje enviado!</p>
+      </div>
+    </div>
+
+    <!-- PANTALLA SALIDA -->
+    <div id="pantalla-salida" class="pantalla">
+      <h2>¿Ya te vas?</h2>
+      <p class="subtitulo">No aguantaste la presión. Puedes cerrar esta pestaña o volver cuando quieras.</p>
+      <button id="btn-regresar-salida" class="btn btn-secundario">Volver al Menú</button>
+    </div>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
