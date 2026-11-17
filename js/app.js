@@ -34,6 +34,39 @@ let indiceActual = 0;
 let puntaje = 0;
 let audioEnCurso = null;
 let temporizadorAvance = null;
+let contextoAudioClick = null;
+
+function reproducirSonidoClick() {
+  const AudioContexto = window.AudioContext;
+  if (!AudioContexto) {
+    return;
+  }
+
+  contextoAudioClick = contextoAudioClick || new AudioContexto();
+  const ahora = contextoAudioClick.currentTime;
+  const oscilador = contextoAudioClick.createOscillator();
+  const volumen = contextoAudioClick.createGain();
+
+  oscilador.frequency.setValueAtTime(1100, ahora);
+  oscilador.frequency.exponentialRampToValueAtTime(450, ahora + 0.025);
+  volumen.gain.setValueAtTime(0.06, ahora);
+  volumen.gain.exponentialRampToValueAtTime(0.001, ahora + 0.025);
+  oscilador.connect(volumen);
+  volumen.connect(contextoAudioClick.destination);
+  oscilador.start(ahora);
+  oscilador.stop(ahora + 0.03);
+}
+
+document.addEventListener('click', (evento) => {
+  if (!(evento.target instanceof Element)) {
+    return;
+  }
+
+  const boton = evento.target.closest('button');
+  if (boton && !boton.disabled) {
+    reproducirSonidoClick();
+  }
+}, true);
 
 async function cargarQuizDesdeJson() {
   try {
