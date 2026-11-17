@@ -33,6 +33,7 @@ let preguntasActivas = [];
 let indiceActual = 0;
 let puntaje = 0;
 let audioEnCurso = null;
+let temporizadorAvance = null;
 
 async function cargarQuizDesdeJson() {
   try {
@@ -69,6 +70,11 @@ function mostrarPantalla(idPantalla) {
 }
 
 function detenerAudioActual() {
+  if (temporizadorAvance) {
+    clearTimeout(temporizadorAvance);
+    temporizadorAvance = null;
+  }
+
   if (audioEnCurso) {
     audioEnCurso.pause();
     audioEnCurso.currentTime = 0;
@@ -164,10 +170,23 @@ function verificarRespuesta(indiceSeleccionado, botonPresionado) {
 
 function reproducirYAvanzar(ruta) {
   const indicador = document.getElementById('estado-audio');
-  audioEnCurso = new Audio(ruta);
+  const audio = new Audio(ruta);
+  audioEnCurso = audio;
+  let avanceCompletado = false;
 
   const avanzar = () => {
+    if (avanceCompletado || audioEnCurso !== audio) {
+      return;
+    }
+
+    avanceCompletado = true;
+    if (temporizadorAvance) {
+      clearTimeout(temporizadorAvance);
+      temporizadorAvance = null;
+    }
+
     indicador.classList.add('oculto');
+    audioEnCurso = null;
     indiceActual++;
 
     if (indiceActual < preguntasActivas.length) {
@@ -177,19 +196,22 @@ function reproducirYAvanzar(ruta) {
     }
   };
 
-  audioEnCurso.addEventListener('ended', avanzar);
+  const avanzarConRetraso = () => {
+    if (avanceCompletado || audioEnCurso !== audio || temporizadorAvance) {
+      return;
+    }
 
-  audioEnCurso.addEventListener('error', () => {
-    setTimeout(avanzar, 1800);
-  });
+    temporizadorAvance = setTimeout(avanzar, 1800);
+  };
 
-  audioEnCurso.play()
+  audio.addEventListener('ended', avanzar);
+  audio.addEventListener('error', avanzarConRetraso);
+
+  audio.play()
     .then(() => {
       indicador.classList.remove('oculto');
     })
-    .catch(() => {
-      setTimeout(avanzar, 1800);
-    });
+    .catch(avanzarConRetraso);
 }
 
 // 6. PANTALLA FINAL ADAPTADA A LA DIFICULTAD
