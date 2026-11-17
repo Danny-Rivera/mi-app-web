@@ -1,0 +1,654 @@
+{
+  "niveles": [
+    {
+      "id": "1",
+      "nombre": "Aficionado",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué es el diseño gráfico?",
+          "opciones": [
+            "La creación de soluciones visuales para comunicar un mensaje",
+            "Dibujar únicamente personajes",
+            "Decorar cualquier espacio sin objetivo",
+            "Escribir textos sin imágenes"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Cuáles son los colores primarios tradicionales en el modelo RYB?",
+          "opciones": [
+            "Verde, naranja y violeta",
+            "Rojo, amarillo y azul",
+            "Cian, magenta y amarillo",
+            "Negro, blanco y gris"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué transmite normalmente una tipografía en negrita?",
+          "opciones": [
+            "Menor legibilidad siempre",
+            "Un efecto de transparencia",
+            "Énfasis o mayor peso visual",
+            "Que el texto es un enlace"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué es un logotipo?",
+          "opciones": [
+            "Una fotografía de un producto",
+            "Un conjunto de párrafos",
+            "Un formato de impresión",
+            "Una representación gráfica que identifica una marca"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Para qué sirve el contraste?",
+          "opciones": [
+            "Para diferenciar elementos y mejorar la jerarquía visual",
+            "Para que todos los elementos se vean iguales",
+            "Para eliminar el orden de lectura",
+            "Para reducir siempre el tamaño del diseño"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué es la composición?",
+          "opciones": [
+            "El precio de un diseño",
+            "La organización de los elementos dentro de un espacio",
+            "El nombre del programa utilizado",
+            "La resolución de una fotografía"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué formato suele conservar transparencia?",
+          "opciones": [
+            "JPG",
+            "BMP",
+            "PNG",
+            "TXT"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué significa RGB?",
+          "opciones": [
+            "Rojo, gris y blanco",
+            "Resolución gráfica básica",
+            "Relleno, gradiente y borde",
+            "Rojo, verde y azul"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué es una paleta de colores?",
+          "opciones": [
+            "Una selección de colores que se usan de manera coordinada",
+            "Una lista de fuentes tipográficas",
+            "Un tipo de papel",
+            "Una herramienta para recortar imágenes"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué función cumple el espacio en blanco?",
+          "opciones": [
+            "Indicar que el diseño está incompleto",
+            "Dar aire, separar elementos y facilitar la lectura",
+            "Obligar a usar más colores",
+            "Reemplazar todas las imágenes"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué es una imagen vectorial?",
+          "opciones": [
+            "Una imagen formada únicamente por píxeles",
+            "Una fotografía comprimida",
+            "Una imagen construida con trazados y formas escalables",
+            "Una captura de pantalla"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué elemento ayuda a que un título destaque?",
+          "opciones": [
+            "Usar exactamente el mismo tamaño que todo",
+            "Colocarlo siempre al final",
+            "Reducirlo hasta hacerlo ilegible",
+            "Darle una jerarquía visual clara"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué es una marca?",
+          "opciones": [
+            "El conjunto de percepciones e identidad asociadas a una organización o producto",
+            "Solamente un color",
+            "Un archivo de Photoshop",
+            "Una publicación en redes sociales"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué suele pasar si se usan demasiadas tipografías distintas?",
+          "opciones": [
+            "La pieza siempre se vuelve más elegante",
+            "Se pierde coherencia y puede dificultarse la lectura",
+            "Aumenta automáticamente la resolución",
+            "El archivo pesa menos"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Cuál es una buena práctica al diseñar para redes sociales?",
+          "opciones": [
+            "Ignorar el tamaño de pantalla",
+            "Usar textos diminutos",
+            "Priorizar claridad, jerarquía y formato adecuado",
+            "Colocar todos los elementos en una esquina"
+          ],
+          "correcta": 2
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Estudiante",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué principio de diseño organiza elementos según su importancia?",
+          "opciones": [
+            "Textura",
+            "Jerarquía visual",
+            "Compresión",
+            "Saturación"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué es la retícula o grid en diseño editorial?",
+          "opciones": [
+            "Una guía estructural para alinear y distribuir contenido",
+            "Un filtro fotográfico",
+            "Un modo de color",
+            "Una técnica para convertir texto en curvas"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué combinación suele ofrecer mayor legibilidad en texto largo?",
+          "opciones": [
+            "Amarillo claro sobre blanco",
+            "Rojo sobre verde saturado",
+            "Negro o gris oscuro sobre fondo claro",
+            "Azul oscuro sobre negro"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué describe mejor la resolución de una imagen?",
+          "opciones": [
+            "La cantidad de colores de una paleta",
+            "El tamaño físico del monitor",
+            "La cantidad de capas",
+            "El nivel de detalle definido por sus píxeles"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué significa CMYK?",
+          "opciones": [
+            "Cian, magenta, amarillo y negro",
+            "Color, matiz, yema y kilo",
+            "Contraste, mezcla y tono",
+            "Cian, marrón, amarillo y blanco"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué es el kerning?",
+          "opciones": [
+            "El espacio entre líneas de texto",
+            "El ajuste del espacio entre pares de letras",
+            "La alineación de párrafos",
+            "El grosor de una fuente"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Para qué se utiliza el sangrado en impresión?",
+          "opciones": [
+            "Para mejorar el brillo de la pantalla",
+            "Para reducir el peso del PDF",
+            "Para evitar bordes blancos tras el corte",
+            "Para convertir RGB en escala de grises"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué diferencia principal existe entre RGB y CMYK?",
+          "opciones": [
+            "RGB se usa solo en periódicos",
+            "CMYK es exclusivo de pantallas",
+            "Ambos son exactamente iguales",
+            "RGB es aditivo para luz y CMYK es sustractivo para impresión"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué es la alineación en una composición?",
+          "opciones": [
+            "La relación ordenada de los elementos respecto a una guía o eje",
+            "La cantidad de efectos aplicados",
+            "La conversión de una imagen a PNG",
+            "El nivel de saturación"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué característica tiene una familia tipográfica?",
+          "opciones": [
+            "Incluye únicamente un tamaño",
+            "Agrupa variantes relacionadas de una tipografía",
+            "Es una colección de fotografías",
+            "Define el perfil de color"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué es la proporción áurea?",
+          "opciones": [
+            "Un sistema de compresión",
+            "Una norma obligatoria para todos los logos",
+            "Una relación matemática usada como referencia compositiva",
+            "Un tipo de papel fotográfico"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué conviene revisar antes de exportar un arte para imprenta?",
+          "opciones": [
+            "Solo el nombre del archivo",
+            "Únicamente el color del fondo",
+            "Que el archivo tenga muchas capas",
+            "Modo de color, resolución, sangrado, fuentes e imágenes"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué es un moodboard?",
+          "opciones": [
+            "Un panel de referencias visuales que define una dirección estética",
+            "Un archivo final listo para imprenta",
+            "Una tabla de precios",
+            "Un formato de video"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué función tiene la escala tipográfica?",
+          "opciones": [
+            "Cambiar el idioma del documento",
+            "Establecer tamaños coherentes para distintos niveles de texto",
+            "Aumentar la resolución de imágenes",
+            "Convertir texto en vectores"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué es la consistencia visual?",
+          "opciones": [
+            "Repetir exactamente la misma pieza en todos los medios",
+            "Usar siempre un solo color",
+            "Mantener criterios gráficos coherentes entre piezas y canales",
+            "Evitar cualquier variación de formato"
+          ],
+          "correcta": 2
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Diseñador Jr",
+      "preguntas": [
+        {
+          "pregunta": "Un cliente solicita un logo que funcione en una factura pequeña y en un rótulo grande. ¿Qué conviene entregar?",
+          "opciones": [
+            "Un JPG de baja resolución",
+            "Una captura del diseño",
+            "Un archivo con efectos rasterizados",
+            "Versiones vectoriales y variantes adecuadas de uso"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué debe contener una guía básica de identidad visual?",
+          "opciones": [
+            "Usos del logo, color, tipografía y criterios gráficos",
+            "Solo el precio del diseño",
+            "Únicamente fotografías del equipo",
+            "Una lista de contraseñas"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Por qué se deben convertir las fuentes a contornos o adjuntarlas al entregar un archivo editable para imprenta?",
+          "opciones": [
+            "Para cambiar el perfil RGB",
+            "Para evitar sustituciones si el proveedor no tiene las fuentes",
+            "Para aumentar el tamaño del papel",
+            "Para añadir sangrado automáticamente"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué es un archivo PDF/X en producción gráfica?",
+          "opciones": [
+            "Un formato de imagen animada",
+            "Un documento exclusivo para presentaciones",
+            "Un estándar de intercambio PDF orientado a impresión",
+            "Un archivo de tipografía"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Al preparar una imagen para impresión de gran formato, ¿qué criterio es más importante?",
+          "opciones": [
+            "Usar siempre 300 ppp sin importar el tamaño",
+            "Convertirla obligatoriamente a GIF",
+            "Eliminar el perfil de color",
+            "Evaluar tamaño final, distancia de visualización y resolución efectiva"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué problema puede causar estirar un logotipo de forma no proporcional?",
+          "opciones": [
+            "Deforma la identidad y altera sus proporciones",
+            "Mejora su legibilidad",
+            "Lo convierte en vector",
+            "Aumenta su área de protección"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué es el área de protección de un logotipo?",
+          "opciones": [
+            "El espacio destinado a los textos legales",
+            "La zona libre mínima alrededor del logo",
+            "El margen de sangrado de una fotografía",
+            "El tamaño máximo de impresión"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué práctica ayuda a mantener consistencia en publicaciones de una campaña?",
+          "opciones": [
+            "Diseñar cada pieza sin referencias",
+            "Cambiar de paleta en cada publicación",
+            "Definir un sistema de plantillas y reglas visuales",
+            "Usar una tipografía distinta por párrafo"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué diferencia hay entre mockup y arte final?",
+          "opciones": [
+            "Son exactamente lo mismo",
+            "El mockup siempre se imprime",
+            "El arte final es solo una presentación",
+            "El mockup simula la aplicación; el arte final está preparado para producirse"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué es la jerarquía de información en una pieza publicitaria?",
+          "opciones": [
+            "Ordenar contenidos según su importancia para guiar la lectura",
+            "Colocar el logo siempre en el centro",
+            "Usar el mayor número de tamaños posibles",
+            "Alinear todos los textos a la derecha"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué conviene hacer si un color corporativo cambia mucho entre pantalla e impresión?",
+          "opciones": [
+            "Ignorar la diferencia",
+            "Definir referencias de color para cada sistema y hacer pruebas",
+            "Aumentar la saturación al máximo",
+            "Cambiar el logo"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué significa que un diseño sea accesible?",
+          "opciones": [
+            "Que tenga muchos efectos",
+            "Que use exclusivamente colores brillantes",
+            "Que pueda ser comprendido y utilizado por personas con distintas capacidades",
+            "Que solo funcione en computadoras"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué dato es esencial al preparar una pieza para redes sociales?",
+          "opciones": [
+            "El modelo de impresora",
+            "El gramaje del papel",
+            "El número de tintas planas",
+            "Las dimensiones y especificaciones actuales de la plataforma"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué es un sistema de diseño?",
+          "opciones": [
+            "Un conjunto documentado de componentes, reglas y patrones reutilizables",
+            "Una carpeta con imágenes sin clasificar",
+            "Un único logotipo",
+            "Un programa de edición"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué deberías hacer ante un brief ambiguo?",
+          "opciones": [
+            "Empezar a diseñar sin preguntar",
+            "Aclarar objetivos, público, entregables, restricciones y criterios de éxito",
+            "Elegir cualquier estilo de moda",
+            "Entregar tres archivos al azar"
+          ],
+          "correcta": 1
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nombre": "Diseñador Sr",
+      "preguntas": [
+        {
+          "pregunta": "Una marca quiere rediseñarse sin perder reconocimiento. ¿Cuál es el enfoque más sólido?",
+          "opciones": [
+            "Cambiar todos los activos para demostrar creatividad",
+            "Seguir tendencias sin investigar",
+            "Auditar el valor de marca y evolucionar los activos distintivos con intención",
+            "Conservar todo sin evaluar resultados"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué distingue a una dirección de arte sólida?",
+          "opciones": [
+            "La preferencia personal del director",
+            "La acumulación de efectos visuales",
+            "La ejecución de piezas aisladas sin sistema",
+            "Una visión visual coherente que traduce la estrategia en decisiones creativas"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué debería guiar la arquitectura de marca?",
+          "opciones": [
+            "La relación entre públicos, ofertas, posicionamiento y objetivos del negocio",
+            "El gusto del diseñador únicamente",
+            "La cantidad de colores disponibles",
+            "El formato del manual"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "En una prueba A/B de una landing page, ¿qué práctica permite obtener conclusiones más fiables?",
+          "opciones": [
+            "Cambiar muchos elementos a la vez",
+            "Definir hipótesis y variar una variable principal manteniendo condiciones comparables",
+            "Detener la prueba al primer clic",
+            "Elegir la versión más bonita sin medir"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué es un atributo distintivo de marca?",
+          "opciones": [
+            "Un elemento decorativo intercambiable",
+            "Un recurso que solo aparece en campañas internas",
+            "Un activo reconocible que ayuda a identificar la marca",
+            "Una tendencia visual temporal"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Cómo se debe abordar un conflicto entre preferencia del cliente y objetivos de comunicación?",
+          "opciones": [
+            "Aceptar cualquier cambio sin argumentar",
+            "Imponer el gusto del diseñador",
+            "Evitar documentar decisiones",
+            "Presentar criterios, evidencia y alternativas vinculadas a los objetivos acordados"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué indicador resulta más útil para evaluar si una pieza digital cumple su objetivo de conversión?",
+          "opciones": [
+            "La tasa de conversión definida para esa acción",
+            "La cantidad de capas del archivo",
+            "El número de colores usados",
+            "El tamaño del logo"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué implica diseñar un sistema visual escalable?",
+          "opciones": [
+            "Crear una pieza maestra que nunca se modifica",
+            "Definir reglas y componentes que se adapten a distintos formatos sin perder coherencia",
+            "Usar siempre las mismas dimensiones",
+            "Evitar versiones responsivas"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Qué es la deuda de diseño en un producto digital?",
+          "opciones": [
+            "El costo de comprar licencias",
+            "El presupuesto destinado a publicidad",
+            "La acumulación de decisiones inconsistentes que dificultan mantener y evolucionar la experiencia",
+            "El precio de una auditoría"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "Al evaluar una experiencia de usuario, ¿qué enfoque es más completo?",
+          "opciones": [
+            "Medir únicamente si el usuario dice que le gusta",
+            "Revisar solo la estética",
+            "Asumir que el equipo conoce al usuario",
+            "Combinar investigación, pruebas de usabilidad, analítica y contexto de negocio"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué función cumple un principio de diseño dentro de un equipo?",
+          "opciones": [
+            "Orientar decisiones repetibles y resolver tensiones de manera consistente",
+            "Reemplazar toda investigación",
+            "Evitar que el equipo cuestione decisiones",
+            "Definir el software obligatorio"
+          ],
+          "correcta": 0
+        },
+        {
+          "pregunta": "¿Qué debería incluir una auditoría de identidad madura?",
+          "opciones": [
+            "Solo una revisión del logotipo",
+            "Activos, consistencia, puntos de contacto, percepción, usos y oportunidades",
+            "Únicamente los colores",
+            "Una comparación de tendencias"
+          ],
+          "correcta": 1
+        },
+        {
+          "pregunta": "¿Por qué es importante documentar tokens de diseño?",
+          "opciones": [
+            "Para que el archivo pese más",
+            "Para impedir cambios de marca",
+            "Para centralizar valores reutilizables y mantener consistencia entre plataformas",
+            "Para sustituir la investigación con usuarios"
+          ],
+          "correcta": 2
+        },
+        {
+          "pregunta": "¿Qué criterio es más adecuado al priorizar mejoras de diseño en un producto?",
+          "opciones": [
+            "La facilidad de hacerlas, sin más análisis",
+            "La opinión de la persona con más antigüedad",
+            "La novedad visual",
+            "El impacto esperado, evidencia, esfuerzo, riesgo y objetivos del producto"
+          ],
+          "correcta": 3
+        },
+        {
+          "pregunta": "¿Qué demuestra realmente seniority en diseño?",
+          "opciones": [
+            "Tomar decisiones fundamentadas, elevar la calidad del sistema y generar impacto más allá de ejecutar piezas",
+            "Conocer muchos atajos de teclado",
+            "Usar el software más caro",
+            "Rechazar toda crítica"
+          ],
+          "correcta": 0
+        }
+      ]
+    }
+  ],
+  "mensajes": {
+    "1": [
+      "¡Toca practicar un poquito más! Por ahora el diseño te está diseñando a vos.",
+      "Vas agarrando la onda, pero todavía hay varios conceptos que necesitan cariño.",
+      "¡Muy bien! Ya tenés una buena base. Seguí practicando para pulir el ojo.",
+      "¡Excelente! Tenés muy buen ojo para este nivel. ¡A seguir creando!"
+    ],
+    "2": [
+      "Hay que volver a los apuntes. La inspiración ayuda, pero no reemplaza estudiar.",
+      "Se nota que has visto los temas, pero todavía te falta conectar la teoría con la práctica.",
+      "Buen trabajo. Tenés una base sólida; ahora toca afinar criterio y ejecución.",
+      "¡Impecable! Dominás muy bien estos fundamentos. Seguí subiendo el nivel."
+    ],
+    "3": [
+      "Eso no fue una evaluación de diseño, fue una solicitud de auxilio. Repasá lo básico antes de cobrar por esto.",
+      "El entusiasmo está, el criterio todavía está en período de prueba. A estudiar y practicar.",
+      "Buen resultado. Ya resolvés bastante, pero todavía hay detalles que separan lo correcto de lo profesional.",
+      "¡Excelente trabajo! Tenés criterio y dominio para este nivel. Que se note también en tus entregas."
+    ],
+    "4": [
+      "¿Senior de qué, exactamente? Con ese resultado no dirigís ni el cursor. Bajate del pedestal y volvé a estudiar.",
+      "Mucho título y poco fundamento. Antes de dar cátedra, asegurate de dominar lo que estás defendiendo.",
+      "No está mal, pero para alguien que se hace llamar Senior, esos huecos de conocimiento no deberían estar ahí.",
+      "Ahora sí. Criterio, dominio y consistencia. Te ganaste el título en esta prueba; no lo arruinés en la práctica."
+    ]
+  }
+}
