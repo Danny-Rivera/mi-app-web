@@ -74,7 +74,7 @@ function reproducirSonidoClick() {
   }
 
   const ahora = contextoAudioClick.currentTime;
-  reproducirNota(contexto, 1100, ahora, 0.055, 0.12, 'sine', 620);
+  reproducirNota(contexto, 1100, ahora, 0.055, 0.24, 'sine', 620);
 }
 
 function reproducirSonidoRespuesta(esCorrecta) {
@@ -85,10 +85,10 @@ function reproducirSonidoRespuesta(esCorrecta) {
 
   const ahora = contexto.currentTime;
   if (esCorrecta) {
-    reproducirNota(contexto, 660, ahora, 0.22, 0.14);
-    reproducirNota(contexto, 880, ahora + 0.13, 0.28, 0.14);
+    reproducirNota(contexto, 660, ahora, 0.22, 0.28);
+    reproducirNota(contexto, 880, ahora + 0.13, 0.28, 0.28);
   } else {
-    reproducirNota(contexto, 330, ahora, 0.32, 0.15, 'triangle', 220);
+    reproducirNota(contexto, 330, ahora, 0.32, 0.3, 'triangle', 220);
   }
 }
 
