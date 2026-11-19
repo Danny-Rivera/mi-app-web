@@ -1,4 +1,4 @@
-// 1. ESTADO DEL JUEGO
+﻿// 1. ESTADO DEL JUEGO
 let bancoPreguntas = {};
 let mensajesPorNivel = {
   1: [
