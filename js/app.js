@@ -1,4 +1,4 @@
-﻿// 1. ESTADO DEL JUEGO
+// 1. ESTADO DEL JUEGO
 let bancoPreguntas = {};
 let mensajesPorNivel = {
   1: [
@@ -36,25 +36,60 @@ let audioEnCurso = null;
 let temporizadorAvance = null;
 let contextoAudioClick = null;
 
-function reproducirSonidoClick() {
-  const AudioContexto = window.AudioContext;
+function obtenerContextoAudio() {
+  const AudioContexto = window.AudioContext || window.webkitAudioContext;
   if (!AudioContexto) {
-    return;
+    return null;
   }
 
   contextoAudioClick = contextoAudioClick || new AudioContexto();
-  const ahora = contextoAudioClick.currentTime;
-  const oscilador = contextoAudioClick.createOscillator();
-  const volumen = contextoAudioClick.createGain();
+  if (contextoAudioClick.state === 'suspended') {
+    contextoAudioClick.resume().catch((error) => {
+      console.warn('No se pudo reanudar el audio:', error);
+    });
+  }
+  return contextoAudioClick;
+}
 
-  oscilador.frequency.setValueAtTime(1100, ahora);
-  oscilador.frequency.exponentialRampToValueAtTime(450, ahora + 0.025);
-  volumen.gain.setValueAtTime(0.06, ahora);
-  volumen.gain.exponentialRampToValueAtTime(0.001, ahora + 0.025);
-  oscilador.connect(volumen);
-  volumen.connect(contextoAudioClick.destination);
-  oscilador.start(ahora);
-  oscilador.stop(ahora + 0.03);
+function reproducirNota(contexto, frecuencia, inicio, duracion, volumen, tipo = 'sine', frecuenciaFinal = frecuencia) {
+  const oscilador = contexto.createOscillator();
+  const ganancia = contexto.createGain();
+
+  oscilador.type = tipo;
+  oscilador.frequency.setValueAtTime(frecuencia, inicio);
+  oscilador.frequency.exponentialRampToValueAtTime(frecuenciaFinal, inicio + duracion);
+  ganancia.gain.setValueAtTime(0.0001, inicio);
+  ganancia.gain.exponentialRampToValueAtTime(volumen, inicio + 0.01);
+  ganancia.gain.exponentialRampToValueAtTime(0.0001, inicio + duracion);
+  oscilador.connect(ganancia);
+  ganancia.connect(contexto.destination);
+  oscilador.start(inicio);
+  oscilador.stop(inicio + duracion);
+}
+
+function reproducirSonidoClick() {
+  const contexto = obtenerContextoAudio();
+  if (!contexto) {
+    return;
+  }
+
+  const ahora = contextoAudioClick.currentTime;
+  reproducirNota(contexto, 1100, ahora, 0.055, 0.12, 'sine', 620);
+}
+
+function reproducirSonidoRespuesta(esCorrecta) {
+  const contexto = obtenerContextoAudio();
+  if (!contexto) {
+    return;
+  }
+
+  const ahora = contexto.currentTime;
+  if (esCorrecta) {
+    reproducirNota(contexto, 660, ahora, 0.22, 0.14);
+    reproducirNota(contexto, 880, ahora + 0.13, 0.28, 0.14);
+  } else {
+    reproducirNota(contexto, 330, ahora, 0.32, 0.15, 'triangle', 220);
+  }
 }
 
 document.addEventListener('click', (evento) => {
@@ -63,7 +98,7 @@ document.addEventListener('click', (evento) => {
   }
 
   const boton = evento.target.closest('button');
-  if (boton && !boton.disabled) {
+  if (boton && !boton.disabled && !boton.matches('.opcion-btn')) {
     reproducirSonidoClick();
   }
 }, true);
@@ -185,6 +220,8 @@ function verificarRespuesta(indiceSeleccionado, botonPresionado) {
   const numPregunta = indiceActual + 1;
   const numOpcion = indiceSeleccionado + 1;
   const esCorrecta = indiceSeleccionado === actual.correcta;
+
+  reproducirSonidoRespuesta(esCorrecta);
 
   let rutaAudio = '';
 
